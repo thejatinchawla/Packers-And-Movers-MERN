@@ -19,7 +19,6 @@ const Signup = () => {
     }
   }
 
- 
   return (
     <div className='row mx-3'>
       <div className="col-md-4 border border-1 p-4 ">
@@ -33,7 +32,7 @@ const Signup = () => {
           <label className='form-check-label'>
             I agree all statements in <a href="#!">Terms of service</a>
           </label>
-          <button type='submit' disabled={password.length === 0} onClick={postName} className="btn btn-primary form-control mt-3">Register</button>
+          <button type='submit' disabled={cpassword.length === 0} onClick={postName} className="btn btn-primary form-control mt-3">Register</button>
         </form>
       </div>
       <div className="col-md-5">

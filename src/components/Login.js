@@ -13,11 +13,11 @@ const Login = () => {
     console.log(resp)
     window.location='/'
     alert("Login Successfully")
-    } catch (error) {
-      console.log(error.response);
+  } catch (error) {
+      alert("Login Failed")
+      console.log(error);
     }
   }
-
   return (
     <div className='row mx-3'>
       <div className="col-md-4 border border-1 p-4">

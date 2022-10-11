@@ -45,13 +45,12 @@ router.post('/login',async(req,res)=>{
         if (password == userDetail.password) {
             res.json({msg:"login successfull"})
         } else {
-            res.status(401).json({msg:"invalid details"})
+            res.status(401).json({msg:"invalid Details"})
         }
-
     } catch (error) {
         console.log(error);
     }
 })
 
 module.exports = router
-            
+
