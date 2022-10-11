@@ -26,7 +26,9 @@ function Header() {
                 <li className="nav-item">
                 <Link className="nav-link active mx-4" aria-current="page" to="/help">Help</Link>
                 </li>
-                <button className="btn btn-success" style={{marginRight:"50px",marginLeft:"50px"}} >Get Started</button>
+                <li className="nav-item">
+                <Link className="nav-link active mx-4" aria-current="page" to="/contact">Contact us</Link>
+                </li>
             </ul>
             </form>
             </div>
