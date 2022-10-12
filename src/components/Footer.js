@@ -4,7 +4,7 @@ function Footer() {
     <div>
         <footer>
             <p className="copy">
-            &copy; 2022 All Rights Reserved by <strong className='text-black'>Jatin Chawla</strong>
+            &copy; 2022 All Rights Reserved by <strong id='ownName'>Jatin Chawla</strong>
             </p>
             <div className="social-links mt-4">
             <a href="#!" target={"_blank"} rel="noreferrer" className="fa fa-instagram instagram" >&nbsp;</a>

@@ -4,7 +4,9 @@ padding: 0;
 }
 
 body {
-background-image: linear-gradient(100deg, #9896F0, #FBC8D5);
+/* background-image: linear-gradient(100deg, #9896F0, #FBC8D5); */
+background-image: url('https://wallpapercave.com/wp/wp3182859.jpg');
+color: aliceblue;
 font-family: "Poppins", sans-serif;
 }
 
@@ -39,8 +41,13 @@ footer {
 
 footer .social-links a {
 text-decoration: none;
-color: rgb(0, 0, 0);
+color: #2f9ee5;
+/* color: rgb(0, 0, 0); */
 padding: 5px;
+}
+
+#ownName {
+  color: #2f9ee5;
 }
 
 footer .social-links a:hover {
