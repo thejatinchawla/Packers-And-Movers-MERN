@@ -1,15 +1,19 @@
 const mongoose = require("mongoose")
 
 const signupSchema = new mongoose.Schema({
-    fullname : {
+    companyName : {
         type : String,
         required : true
     },
-    username : {
+    phone : {
         type : String,
         required : true,
         unique : true
     },
+    place : {
+        type : String,
+        required : true
+    },    
     password :{
         type : String,
         required : true
@@ -19,6 +23,6 @@ const signupSchema = new mongoose.Schema({
         required : true
     }
 })
-const Struct = new mongoose.model("struct",  signupSchema)
-module.exports = Struct
+const Contractors = new mongoose.model("admin",  signupSchema)
+module.exports = Contractors
 

@@ -6,8 +6,12 @@ padding: 0;
 body {
 /* background-image: linear-gradient(100deg, #9896F0, #FBC8D5); */
 background-image: url('https://wallpapercave.com/wp/wp3182859.jpg');
-color: aliceblue;
+color: rgb(255, 255, 255);
 font-family: "Poppins", sans-serif;
+}
+
+.bg-pic {
+  max-width: 100%;
 }
 
 .navbar {
@@ -15,14 +19,11 @@ padding-top: 40px;
 padding-left: 35px;
 }
 
-#landingPage {
-  margin-bottom: 100px;
-}
 
-.row {
+#page {
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 180px;
 }
 
 
