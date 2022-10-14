@@ -1,11 +1,13 @@
 const express = require('express')
 const Client = require('../models/Client')
 const Admin = require('../models/Contractors')
+const Adetails = require('../models/ContractorsDetails')
+
 const router = new express.Router()
 
 
-router.get('/',(req,res)=>{
-    Struct.find()
+router.get('/admindetails',(req,res)=>{
+    Adetails.find()
     .exec()
     .then(result=>{
         res.status(200).send(result)
@@ -90,6 +92,25 @@ router.post('/admin',async(req,res)=>{
         }
     } catch (error) {
         console.log(error);
+    }
+})
+
+router.post('/admindetails',async(req,res)=>{
+    try {
+            const dataSave = new Adetails({
+                companyname : req.body.companyname,
+                about : req.body.about,
+                year : req.body.year,
+                address : req.body.address,
+                call : req.body.call,
+                email : req.body.email
+            })
+            const dataSaved = await dataSave.save()
+            res.status(201).json({msg:"contractor details save",dataSaved})
+            console.log(dataSaved);
+    } catch (error) {
+        res.status(404).json({msg:"invalid",dataSaved})
+        console.log(error)
     }
 })
 

@@ -2,15 +2,19 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MainPage from './components/MainPage';
-import Login from './components/Clogin';
+import Login from './components/client/Clogin';
 import { BrowserRouter , Routes, Route } from "react-router-dom";
-import Signup from './components/Signup';
+import Signup from './components/client/Signup';
 import About from './components/About';
 import Help from './components/Help';
 import Contact from './components/Contact';
 import Alogin from './components/contractor/Alogin';
 import AdminSignup from './components/contractor/AdminSignup';
-import BothSignup from './components/BothSignup';
+import BothSignup from './components/contractor/BothSignup';
+import ClientPage from './components/client/ClientPage';
+import Order from './components/client/Order';
+import AdminPage from './components/contractor/AdminPage';
+import AdminOrder from './components/contractor/AdminOrder';
 
 
 function App() {
@@ -28,6 +32,11 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/adminsignup' element={<AdminSignup/>}/>
           <Route path='/bothsignup' element={<BothSignup/>}/>
+          <Route path='/client' element={<ClientPage/>}/>
+          <Route path='/order' element={<Order/>}/>
+          <Route path='/adminpage' element={<AdminPage/>}/>
+          <Route path='/adminorder' element={<AdminOrder/>}/>
+
         </Routes>
       </BrowserRouter>
       <hr />

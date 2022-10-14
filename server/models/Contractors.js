@@ -25,4 +25,3 @@ const signupSchema = new mongoose.Schema({
 })
 const Contractors = new mongoose.model("admin",  signupSchema)
 module.exports = Contractors
-

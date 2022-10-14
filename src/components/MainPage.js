@@ -6,8 +6,8 @@ function MainPage() {
       <img src="" alt="" />
         <div className='col-md-6 container'>
             <h1 className='mb-5'>______</h1>
-            <h1 className='display-3'>Landing page Abstract Background </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsa voluptas sed aliquid, reprehenderit error perferendis odit obcaecati quae dolores corporis saepe accusantium tempora officiis ea deleniti molestiae iusto aut?</p>
+            <h1 className='display-5'>PACKING AND UNNPACKING FOR YOU</h1>
+            <p>Packing smart is essential for any move — it can eliminate stress when you’re fully prepared and packed before move day arrives. Our professional teams can provide customized packing services to you, whether you need a little packed or an entire home, we can help.</p>
         </div>
         <div className="container col-md-4 border border-1 p-4 mt-5 mx-5">
         <form >
