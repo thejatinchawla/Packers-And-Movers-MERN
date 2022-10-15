@@ -16,8 +16,6 @@ import AdminPage from './components/contractor/AdminPage';
 import AdminOrder from './components/contractor/AdminOrder';
 import Services from './components/Services';
 import Clientmainpage from './components/client/Clientmainpage';
-
-
 function App() {
   return (
     <div className='bg2img'>
@@ -38,8 +36,6 @@ function App() {
           <Route path='/adminorder' element={<AdminOrder/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/clientmain' element={<Clientmainpage/>}/>
-
-
         </Routes>
       </BrowserRouter>
       <hr />
@@ -52,5 +48,9 @@ export default App;
 
 
 
+
+
           
          
+
+

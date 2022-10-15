@@ -24,7 +24,7 @@ function Header() {
                 <Link className="nav-link active mx-4" aria-current="page" to="/signup">Signup</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link active mx-4" aria-current="page" to="/help">Help</Link>
+                <Link className="nav-link active mx-4" aria-current="page" to="/help">Contact Us</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link active mx-4" aria-current="page" to="/services">Services</Link>

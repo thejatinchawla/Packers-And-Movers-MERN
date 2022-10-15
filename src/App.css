@@ -90,3 +90,7 @@ main .right {
   width: 350px;
   
 }
+
+nav .navbar :hover{
+  color: #2f9ee5;
+}
