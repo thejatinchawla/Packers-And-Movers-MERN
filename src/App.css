@@ -5,9 +5,9 @@ padding: 0;
 
 body {
 /* background-image: linear-gradient(100deg, #A053D6, #5A359F); */
-background-image: url('https://wallpapercave.com/wp/wp3182859.jpg');
-color: rgb(255, 255, 255);
-font-family: "Poppins", sans-serif;
+/* background-image: url('https://wallpapercave.com/wp/wp3182859.jpg'); */
+color: rgb(19, 18, 18);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .bg-pic {
@@ -23,7 +23,7 @@ padding-left: 35px;
 #page {
   justify-content: center;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 150px;
 }
 
 
@@ -43,7 +43,6 @@ footer {
 footer .social-links a {
 text-decoration: none;
 color: #2f9ee5;
-/* color: rgb(0, 0, 0); */
 padding: 5px;
 }
 
@@ -53,4 +52,41 @@ padding: 5px;
 
 footer .social-links a:hover {
   color: #2f9ee5;
+}
+
+h4{
+  font-weight: bold;
+}
+
+.bgimg{
+  background-image: url("./transport1.jpg");
+  background-size: cover;
+  height: auto;
+}
+.bg2img{
+  background-image: url("./Picsart_22-10-15_00-22-01-274.jpg");
+  background-size: cover;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .left {
+  width: fit-content;
+  margin-bottom: 60px;
+  
+}
+
+main .right {
+  /* background-image: linear-gradient(100deg, #a053d6, #5a359f); */
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  width: 350px;
+  
 }

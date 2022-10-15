@@ -91,7 +91,7 @@ router.post('/admin',async(req,res)=>{
             res.status(401).json({msg:"invalid Details"})
         }
     } catch (error) {
-        console.log(error);
+        console.log(error)
     }
 })
 
@@ -103,7 +103,10 @@ router.post('/admindetails',async(req,res)=>{
                 year : req.body.year,
                 address : req.body.address,
                 call : req.body.call,
-                email : req.body.email
+                email : req.body.email,
+                weight : req.body.weight,
+                needs : req.body.needs,
+                furniture : req.body.furniture
             })
             const dataSaved = await dataSave.save()
             res.status(201).json({msg:"contractor details save",dataSaved})

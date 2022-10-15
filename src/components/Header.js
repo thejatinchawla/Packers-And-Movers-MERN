@@ -27,12 +27,13 @@ function Header() {
                 <Link className="nav-link active mx-4" aria-current="page" to="/help">Help</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link active mx-4" aria-current="page" to="/contact">Contact us</Link>
+                <Link className="nav-link active mx-4" aria-current="page" to="/services">Services</Link>
                 </li>
             </ul>
             </form>
             </div>
             </div>
+            <hr />
         </nav>
     </>
   )

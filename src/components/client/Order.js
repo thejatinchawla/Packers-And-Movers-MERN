@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
+
 const Order = () => {
   const [state, setstate] = useState({contractors:[]})
 
@@ -14,23 +16,33 @@ useEffect(() => {
  getContractors()
 }, [])
   return (
-    <div className='row m-3 text-black'>
+    <div className='row m-3 text-black' style={{fontFamily:"serif"}}>
       {state.contractors.map((contractor)=>{
-        const {_id,companyname,about,year,address,call,email} = contractor
+        const {_id,companyname,about,year,address,call,email,weight,needs,furniture,rate} = contractor
         return(
-          <div class="card mx-3" style={{width:"18rem"}}>
+          <div class="card m-4" style={{width:"26rem"}}>
   <div key={_id} class="card-body">
-    <h5 class="card-title">{companyname.toUpperCase()}</h5>
-    <p class="card-text">{about.toUpperCase()}</p>
+    <h4 class="card-title">{companyname.toUpperCase()} <p style={{color:"goldenrod"}} className='d-flex justify-content-end fa fa-star'>{rate}</p> </h4>
+    <hr />
+    <p class="card-text">{about}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{year.toUpperCase()}</li>
-    <li class="list-group-item">{address.toUpperCase()}</li>
-    <li class="list-group-item">{call.toUpperCase()}</li>
-    <li class="list-group-item">{email.toUpperCase()}</li>
+    <li class="list-group-item fa fa-calendar"> : {year}</li>
+    <li class="list-group-item fa fa-map-marker"> : {address}</li>
+    <li class="list-group-item fa fa-phone phone">  : {call.toUpperCase()}</li>
+    <li class="list-group-item fa fa-envelope envelope"> : {email}</li>
   </ul>
-  <div class="card-body justify-content-end">
+  <ul class="list-group list-group-flush">
+  <p className='text-center'><strong>Pricing Schemes</strong> </p>
+    <p class="card-text"><strong>Weight:</strong> {weight}</p>
+    <p class="card-text"><strong>Shifting needs:</strong> {needs}</p>
+    <p class="card-text"><strong>Furniture:</strong> {furniture}</p>
+   
+  </ul>
+  <div class="card-body d-flex justify-content-end">
+    <Link to="/clientmain">
    <button className="btn btn-success">procced</button>
+    </Link>
   </div>
 </div>
         )
@@ -38,5 +50,5 @@ useEffect(() => {
     </div>
   )
 }
-
 export default Order
+

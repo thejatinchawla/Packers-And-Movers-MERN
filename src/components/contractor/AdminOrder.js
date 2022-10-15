@@ -28,12 +28,12 @@ const AdminOrder = () => {
       <div className="col-md-4 border border-1 p-4 mt-5 ">
         <form onSubmit={postAdminDetails} >
         <h2>Company Details</h2>
-          <input type="text"  value={companyname} onChange={(e)=>{setcompanyname(e.target.value)}} placeholder='Enter Company Name' className='form-control mt-5 mb-4' required/>
-          <input type="textarea"  value={about} onChange={(e)=>{setabout(e.target.value)}} placeholder='About' className='form-control mt-5 mb-4' required/>
-          <input type="text"  value={year} onChange={(e)=>{setyear(e.target.value)}} placeholder='since year' className='form-control mt-5 mb-4' required/>
-          <input type="text"  value={address} onChange={(e)=>{setaddress(e.target.value)}} placeholder='Enter Address' className='form-control mt-5 mb-4' required/>
-          <input type="text"  value={call} onChange={(e)=>{setcall(e.target.value)}} placeholder='Enter Phono Number' className='form-control mt-5 mb-4' required/>
-          <input type="text"  value={email} onChange={(e)=>{setemail(e.target.value)}} placeholder='Enter email' className='form-control mt-5 mb-4' required/>
+          <input type="text"  value={companyname} onChange={(e)=>{setcompanyname(e.target.value)}} placeholder='Enter Company Name' className='form-control mt-5 mb-2' required/>
+          <textarea type="textarea"  value={about} onChange={(e)=>{setabout(e.target.value)}} placeholder='About' className='form-control mb-2' required></textarea>
+          <input type="text"  value={year} onChange={(e)=>{setyear(e.target.value)}} placeholder='since year' className='form-control mb-2' required/>
+          <input type="text"  value={address} onChange={(e)=>{setaddress(e.target.value)}} placeholder='Enter Address' className='form-control mb-2' required/>
+          <input type="text"  value={call} onChange={(e)=>{setcall(e.target.value)}} placeholder='Enter Phone Number' className='form-control mb-2' required/>
+          <input type="text"  value={email} onChange={(e)=>{setemail(e.target.value)}} placeholder='Enter email' className='form-control mb-2' required/>
           <button type='submit' disabled={email.length === 0} className="btn btn-primary form-control mt-3 mb-3">Submit</button>
         </form>
       </div>

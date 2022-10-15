@@ -24,6 +24,22 @@ const signupSchema = new mongoose.Schema({
     email :{
         type : String,
         required : true
+    },
+    weight :{
+        type : String,
+        required : true
+    },
+    needs :{
+        type : String,
+        required : true
+    },
+    furniture :{
+        type : String,
+        required : true
+    },
+    rate :{
+        type : String,
+        required : true
     }
 })
 const AdminDetails = new mongoose.model("admindetail",  signupSchema)

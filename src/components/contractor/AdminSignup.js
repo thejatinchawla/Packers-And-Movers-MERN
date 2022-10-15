@@ -25,7 +25,7 @@ const AdminSignup = () => {
     <div className="col-md-4 border border-1 p-4 mt-5 mx-5 ">
         <form onSubmit={postSignup}>
         <h2>CONTRACTOR SIGN UP</h2>
-          <input type="text" value={companyName} onChange={(e)=>{setcompanyName(e.target.value)}} placeholder='Enter Company name' className='form-control mt-5 mb-4' required/>
+          <input type="text" value={companyName} onChange={(e)=>{setcompanyName(e.target.value)}} placeholder='Enter Company name' className='form-control mt-5 mb-2' required/>
           <input type="text" className='form-control' value={phone} onChange={(e)=>{setphone(e.target.value)}} placeholder="Enter Phone Number" required/>
           <input type="text" className='form-control mt-4' value={place} onChange={(e)=>{setplace(e.target.value)}} placeholder="Enter Place" required/>
           <input type="password" value={password} onChange={(e)=>{setpassword(e.target.value)}} placeholder='Enter Password' className='form-control mt-4 ' required/>
