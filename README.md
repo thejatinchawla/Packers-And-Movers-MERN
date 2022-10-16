@@ -48,11 +48,11 @@ Complete end-to-end Packers & Movers Web Application.
 ### Prerequisites
 
 You need to have a basic knowledge of 
--HTML, CSS and JavaScript(ES6)
--Reactjs
--Nodejs (Expressjs)
--MongoDB (mongoose)
--Restful Api's
+- HTML, CSS and JavaScript(ES6)
+- Reactjs
+- Nodejs (Expressjs)
+- MongoDB (mongoose)
+- Restful Api's
 under your belt. Additionally, you need to have [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03), [Node](https://nodejs.org/en/), [VScode](https://code.visualstudio.com/download) text editor installed on your computer.
 
 ### Downloading and Running this Project Locally
