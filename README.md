@@ -80,12 +80,16 @@ npm install
 ```
 npm run start
 ```
-
-## Editing
-
-Rename the MongoDB url
+7. add a ``.env`` file inside the root folder
 ```
-from "process.env.MONGO_URL" to your local MongoDB url eg. "mongodb://localhost:27017/test"
+PORT=5000
+MONGO_URL=your local mongo url
+```
+
+Sample for local
+```
+PORT=5000
+MONGO_URL=mongodb://127.0.0.1:27017/test
 ```
 
 ## License
