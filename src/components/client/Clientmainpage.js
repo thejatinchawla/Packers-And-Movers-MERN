@@ -23,6 +23,7 @@ const Clientmainpage = () => {
         <form ref={form} onSubmit={sendEmail} >
         <h2 className='mb-4'>REQUEST A QUOTE</h2>
         <div className="d-flex justify-content-between"></div>
+          <div><strong> Proper Address:</strong><input type="text" placeholder='Enter Your Proper Residental Address' className='form-control mb-3' name='address'/></div>
           <div><strong> Destination:</strong><input type="text" placeholder='From' className='form-control mb-2' name='from'/></div>
           <div><input type="text" className='form-control mb-4' placeholder='To' name='to'/></div>
          <strong>Weight :</strong><input type="number" className='form-control mb-2' placeholder='Enter the approx weight :' name='weight' />
@@ -36,19 +37,19 @@ const Clientmainpage = () => {
                 <div className="needs me-5">
                     <strong>Shifting Needs :</strong>
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" name='needs' />
+                    <input class="form-check-input" type="checkbox" value="1BHK" name='needs' />
                     <label class="form-check-label" for="flexCheckDefault">
                         1BHK
                     </label>
                     </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" name='needs'  />
+                    <input class="form-check-input" type="checkbox" value="2BHK" name='needs'  />
                     <label class="form-check-label" for="flexCheckChecked">
                         2BHK
                     </label>
                     </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" name='needs'  />
+                    <input class="form-check-input" type="checkbox" value="3BHK" name='needs'  />
                     <label class="form-check-label" for="flexCheckChecked">
                         3BHK
                     </label>
@@ -56,7 +57,6 @@ const Clientmainpage = () => {
                 </div>
                 <input type="text" className='form-control mb-4' placeholder='Enter Your Name' name='name'/>
                 <input type="text" className='form-control mb-4' placeholder='Enter Email' name='email'/>
-                <input type="text" className='form-control mb-4' placeholder='Enter your husband Email' name='hemail'/>
                 <input type="text" className='form-control mb-4' placeholder='Enter Phone Number' name='phone'/>
             <button type='submit' className="btn btn-success form-control">Submit</button>
         </form>
