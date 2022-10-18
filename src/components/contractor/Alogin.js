@@ -10,7 +10,7 @@ const Alogin = () => {
     try {
     const resp = await axios.post("http://localhost:5000/admin",{phone,password})
     console.log(resp)
-    window.location='/adminpage'
+    window.location='/admin/welcome'
     alert("Login Successfully")
   } catch (error) {
       alert("Login Failed")

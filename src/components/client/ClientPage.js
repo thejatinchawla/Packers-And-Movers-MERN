@@ -10,7 +10,7 @@ const ClientPage = () => {
         <div id='page' className='row mx-3'>
       <div className="col-md-4 border border-1 p-4 mt-5">
         <h1 className='mb-5'>WELCOME USER</h1>
-        <Link to="/order">
+        <Link to="/login/client/order">
         <button  type='button' className="btn btn-warning form-control mt-3 mb-3">Place Order</button>
         </Link>
         

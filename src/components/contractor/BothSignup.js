@@ -6,7 +6,7 @@ const BothSignup = () => {
         <div id='page' className='row'>
         <div className="col-md-4 border border-1 p-4 mt-5">
         <h1 className='mb-5'>SIGNUP</h1>
-        <Link to="/signup"><button className="form-control btn btn-warning mb-5">CLIENT SIGNUP</button></Link>
+        <Link to="/clientsignup"><button className="form-control btn btn-warning mb-5">CLIENT SIGNUP</button></Link>
         <Link to="/adminsignup"><button className="form-control btn btn-warning mb-3 ">ADMIN SIGNUP</button></Link>
         <p>Already have account? <Link to="/">Login</Link></p>
         </div>

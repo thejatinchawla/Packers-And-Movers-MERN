@@ -38,8 +38,7 @@ const signupSchema = new mongoose.Schema({
         required : true
     },
     rate :{
-        type : String,
-        required : true
+        type : String
     }
 })
 const AdminDetails = new mongoose.model("admindetail",  signupSchema)

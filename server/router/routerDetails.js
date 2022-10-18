@@ -106,13 +106,14 @@ router.post('/admindetails',async(req,res)=>{
                 email : req.body.email,
                 weight : req.body.weight,
                 needs : req.body.needs,
-                furniture : req.body.furniture
+                furniture : req.body.furniture,
+                rate : req.body.rate
             })
             const dataSaved = await dataSave.save()
             res.status(201).json({msg:"contractor details save",dataSaved})
             console.log(dataSaved);
     } catch (error) {
-        res.status(404).json({msg:"invalid",dataSaved})
+        res.status(404).json({msg:"invalid"})
         console.log(error)
     }
 })

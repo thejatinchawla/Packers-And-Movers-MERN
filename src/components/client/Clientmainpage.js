@@ -10,7 +10,7 @@ const Clientmainpage = () => {
     emailjs.sendForm('service_d8k3r8o', 'template_1c08yjy', form.current, 'AHxJquwAhMAmsAbyY')
       .then((result) => {
         alert("Thank you!! Your request has been sent successfully!")
-        window.location='/client'
+        window.location='/login/client'
           console.log(result.text);
       }, (error) => {
           console.log(error.text);

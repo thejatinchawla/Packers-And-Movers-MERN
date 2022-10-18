@@ -23,19 +23,19 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/clientsignup' element={<Signup/>}/>     
           <Route path='/login' element={<Login/>}/>
           <Route path='/admin' element={<Alogin/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/help' element={<Help/>}/>
           <Route path='/adminsignup' element={<AdminSignup/>}/>
           <Route path='/bothsignup' element={<BothSignup/>}/>
-          <Route path='/client' element={<ClientPage/>}/>
-          <Route path='/order' element={<Order/>}/>
-          <Route path='/adminpage' element={<AdminPage/>}/>
-          <Route path='/adminorder' element={<AdminOrder/>}/>
+          <Route path='/login/client' element={<ClientPage/>}/>
+          <Route path='/login/client/order' element={<Order/>}/>
+          <Route path='/admin/welcome' element={<AdminPage/>}/>
+          <Route path='/admin/welcome/details' element={<AdminOrder/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path='/clientmain' element={<Clientmainpage/>}/>
+          <Route path='/login/client/order/quote' element={<Clientmainpage/>}/>
         </Routes>
       </BrowserRouter>
       <hr />

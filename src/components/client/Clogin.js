@@ -10,7 +10,7 @@ const Clogin = () => {
     try {
     const resp = await axios.post("http://localhost:5000/login",{username,password})
     console.log(resp)
-    window.location='/client'
+    window.location='/login/client'
     alert("Login Successfully")
   } catch (error) {
       alert("Login Failed")

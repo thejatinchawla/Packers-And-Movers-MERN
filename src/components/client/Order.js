@@ -40,7 +40,7 @@ useEffect(() => {
    
   </ul>
   <div class="card-body d-flex justify-content-end">
-    <Link to="/clientmain">
+    <Link to="/login/client/order/quote">
    <button className="btn btn-success">procced</button>
     </Link>
   </div>
